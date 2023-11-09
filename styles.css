@@ -1,0 +1,169 @@
+body {
+    position: relative;
+  }
+  
+  header, footer {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .logros {
+    position: relative;
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .contenido {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+  }
+
+.logo-container {
+    margin: 0 auto;
+}
+
+.logo-container img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+}
+
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.achievements1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #a1d683;
+}
+
+.achievement {
+    text-align: left;
+    margin: 10px;
+}
+
+.achievement h2 {
+    text-align: left;
+    margin: 10px;
+    color:#1B692D;
+}
+
+.achievement p {
+    text-align: left;
+    margin: 10px;
+    color:black;
+}
+
+
+
+.achievement img {
+    max-width: 100%;
+    height: auto;
+}
+
+.boton {
+    background-color:  #1B692D;
+    width: 200px;
+    height: 25px;
+    color: white;
+  }
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .achievements, .how-it-works {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement, .feature {
+        width: 100%;
+    }
+}
+
+.custom-margin {
+    margin: 15px; 
+}
+
+
+.custom-padding {
+    padding: 15px; 
+}
+
+.how-it-works {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 10px;
+  }
+
+.h2,
+.boton,
+.p,
+img {
+  grid-column: span 1;
+}
+
+.how-it-works img {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+} 
+
+.button {
+    background-color: #1B692D;
+    color: white;
+}
+
+.section {
+   background-color:  #1B692D;
+   margin:40px;
+   color: white;
+   padding:5px;
+}
+
+.section1 {
+   margin:30px;
+}
+
+
+.btn {
+    background-color: #1B692D;
+    color: white;
+    transition: #025157, #67b54b ;
+}
+
+/* Agrega un efecto al pasar el mouse sobre los botones */
+.btn:hover {
+    background-color: #025157; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
+
